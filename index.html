@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Valentine's Day</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #ff9aa2, #ffdde1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      color: white;
+    }
+
+    .container {
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 2em;
+    }
+
+    p {
+      font-size: 1.2em;
+    }
+
+    .heart {
+      font-size: 3em;
+      animation: pulse 1s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 20px;
+      background-color: #ff4d6d;
+      color: white;
+      font-size: 1em;
+    }
+
+    button:active {
+      background-color: #e63950;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="heart">❤️</div>
+    <h1>Happy Valentine's Day!</h1>
+    <p>You make my heart smile 💕</p>
+    <button onclick="showMessage()">Tap Me 💌</button>
+  </div>
+
+  <script>
+    function showMessage() {
+      alert("I love you! 💖");
+    }
+  </script>
+</body>
+</html>
